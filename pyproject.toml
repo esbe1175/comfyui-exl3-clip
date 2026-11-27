@@ -9,6 +9,6 @@ dependencies = ["exllamav3>=1.6.1,<2"]
 Repository = "https://github.com/esbe1175/comfyui-exl3-clip"
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "archon001"
 DisplayName = "EXL3 CLIP Loader"
 requires-comfyui = ">=0.44.0"
