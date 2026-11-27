@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-exl3-clip"
+version = "1.0.0"
+description = "Loads EXL3 Qwen text encoders as ComfyUI CLIP."
+license = { file = "LICENSE" }
+dependencies = ["exllamav3>=1.6.1,<2"]
+
+[project.urls]
+Repository = "https://github.com/esbe1175/comfyui-exl3-clip"
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "EXL3 CLIP Loader"
+requires-comfyui = ">=0.44.0"
