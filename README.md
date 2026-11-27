@@ -1,6 +1,15 @@
 # EXL3 CLIP Loader
 
-Loads EXL3 text encoders into ComfyUI's native text-conditioning path. For MOSS-Image, use Qwen3.5-9B EXL3 and leave **encoder_type** on **auto**.
+Built for MOSS-Image with Qwen3.5-9B EXL3. The node outputs a ComfyUI `CLIP` connection for image prompt conditioning. For chat, text generation, or checkpoints such as Gemma, use a dedicated LLM loader.
+
+| Workflow | EXL3 checkpoint | `encoder_type` | Status |
+| --- | --- | --- | --- |
+| MOSS-Image | Qwen3.5-9B, 4.00 bpw | `auto` | Tested end to end |
+| Krea2 | Qwen3-VL-4B | `auto` | Recognized by the loader |
+| Fibo2 | Qwen3-VL-4B | `fibo2` | Recognized by the loader |
+| Qwen Image 2.1 | Qwen3-VL-8B | `auto` | Recognized by the loader |
+
+Each workflow needs its matching native ComfyUI text encoder.
 
 ## Install
 
@@ -12,5 +21,3 @@ Loads EXL3 text encoders into ComfyUI's native text-conditioning path. For MOSS-
    ```
 
 3. Restart ComfyUI, add **EXL3 CLIP Loader**, and select the downloaded model folder. Connect **CLIP** to your text-encode node. Set the CLIP strength to zero for diffusion-only LoRAs.
-
-The loader also recognizes Qwen3-VL-4B for Krea2 and Fibo2, and Qwen3-VL-8B for Qwen Image 2.1 when the matching native encoder is available. Select **fibo2** explicitly for Fibo2.

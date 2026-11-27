@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-exl3-clip"
-version = "1.0.0"
-description = "Loads EXL3 Qwen text encoders as ComfyUI CLIP."
+version = "1.0.1"
+description = "EXL3 Qwen text encoders for ComfyUI image conditioning, built for MOSS-Image and Qwen3.5-9B."
 license = { file = "LICENSE" }
 dependencies = ["exllamav3>=1.6.1,<2"]
 
